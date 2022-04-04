@@ -1,0 +1,163 @@
+<app-header></app-header>
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="gen-paragraphs">
+        <h3 class="paraHeader">Tools</h3>
+        <div class="gen-paragraphs">
+            <input type="button" class="button" (click)="scrollToPartsOfMic()" value="Parts of A Micrometer">
+            <input type="button" class="button" (click)="scrollToCaplipers()" value="Calipers">
+            <input type="button" class="button" (click)="scrollToBoreGage()" value="Bore Gage">
+            <input type="button" class="button" (click)="scrollToHeightGage()" value="Height Gage">
+        </div>
+    </div>
+    <div class="gen-paragraphs">
+        <h3 class="paraHeader">Micrometers and the Vernier Scale</h3>
+        <p>Many times you are required to work to exceptionally precise dimensions. Under these conditions it is better to use a micrometer that is accurate to ten-thousandths of an inch. This degree of accuracy is obtained by the addition of a vernier scale.
+        </p>
+        <p>The vernier scale of a micrometer (fig. 2-26) furnishes the fine readings between the lines on the thimble rather than requiring you to estimate the reading. The 10 spaces on the vernier are equivalent to 9 spaces on the thimble. Therefore, each
+            unit on the vernier scale is equal to 0.0009 inch, and the difference between the sizes of the units on each scale is 0.0001 inch.</p>
+        <img src="./assets/imgs/Vernier scale of a micrometer.JPG" alt="Vernier Scale1">
+        <p>When a line on the thimble scale does not coincide with the horizontal reference line on the sleeve, you can determine the additional spaces beyond the readable thimble mark by finding which vernier mark matches up with a line on the thimble scale.
+            Add this number, as that many ten-thousandths of an inch, to the original reading. In figure 2-27, see how the second line on the vernier scale matches up with a line on the thimble scale? This means that the 0.011 mark on the thimble scale
+            has been advanced an additional 0.0002 beyond the horizontal sleeve line. When you add this to the other readings,the reading is 0.200 + 0.075 + 0.011 + 0.0002, or 0.2862, as shown.</p>
+        <img src="./assets/imgs/Reading the Vernier scale.JPG" alt="Vernier Scale2">
+    </div>
+    <div class="gen-paragraphs">
+        <h3 class="paraHeader">Parts of a Micrometer</h3>
+        <img class="toolImage micImg" src="./assets/imgs/micrometer-screw-gauge-parts-and-Function.jpg" alt="Parts of a Micrometer">
+    </div>
+    <div class="gen-paragraphs">
+        <h3 class="paraHeader">Calipers</h3>
+        <img class="toolImage" src="./assets/imgs/MitutoyoCaliper.jpeg" alt="MitutoyoCaliper">
+        <h4>Do's and Don't for Caliper Care</h4>
+        <p>The caliper is a precision measurement instrument, so make sure you avoid common mistakes that may damage it or put it out of calibration alignment. Here are a few tips:</p>
+        <h4>Don't:</h4>
+        <ul>
+            <li>Never drop or throw your caliper.</li>
+            <li>Don’t lay the caliper on the bench where it can be damaged.</li>
+            <li>Don’t lay the caliper in any kind of debris (metal chips or grinding grit).</li>
+            <li>Do not exceed the measurement range of the caliper.</li>
+            <li>Don’t use a caliper as a substitute for other tools. (e.g., Don’t use a caliper as a pry bar or a screwdriver)</li>
+        </ul>
+        <h4>Do:</h4>
+        <ul>
+            <li>Wipe the measuring faces of the caliper and the to-be-measured surface of the work piece to prevent measuring accuracy from being negatively affected by dirt or dust.</li>
+            <li>Clean the calipers after use.</li>
+            <li>When not in use, be sure to return the caliper to its storage case.</li>
+            <li>Only use your caliper on stationary parts.</li>
+            <li>Protect your dial calipers from dust which can get inside the dial and cause inaccurate readings.</li>
+            <li>Check the caliper’s calibration periodically and follow the manufacturer’s instructions for recalibrating if necessary.</li>
+        </ul>
+
+        <h4>Caliper Care and Maintenance</h4>
+        <p> Calibration Check the calibration sticker to check the calibration schedule. Make sure that the caliper is calibrated at least once a year and more often according to its use.
+        </p>
+        <h4>Check the Calipers for Dirt and Grime</h4>
+        <p> After use, it is important that you check for any unwanted residue that may affect the accuracy of the caliper. Prior to measuring, you must clean and dry the surface of the item to prevent dirt, corrosion, or a file of oil which could cause an
+            inaccurate measurement. Clean the surfaces by applying a small drop of oil on the beam of the caliper and wiping with a clean cloth before storing the calipers. A light coating of high grade instrument oil will go a long way to extend the
+            life of the tool.
+        </p>
+        <h4>Wear</h4>
+        <p> Make sure to inspect your caliper for wear and tear such as burrs and scratches on the jaws. The accuracy of the calipers is dependent on the flatness and parallelism of the two surfaces that come into contact with the part. When these surfaces
+            wear, the accuracy diminishes. A caliper has an accuracy of 0.001. The “rule of ten” states that a measurement tool should have ten times more resolution than the tolerance of the dimension.</p>
+        <h4>Proper Storage</h4>
+        <p> Check to see if the caliper is stored with the jaws closed. If there is dirt on the measurement surfaces, closing the gauge all the way grinds the dirt in between the two surfaces. If you have to store these tools for a long period of time, place
+            a silica gel pack in the drawer of your tool box to prevent rusting. Moisture can become a big issue with digital calipers.</p>
+        <h4>Temperature</h4>
+        <p>Temperature has a substantial impact on measuring results. Precise measurement of work pieces should be ideally carried out with the temperature being about 70°F. Since it is not always possible to be in an ideal situation, one can minimize any
+            error by having the work piece and measuring tool share the same temperature some time prior to the measurement. Precision measuring tools should not be put under direct sunshine or any other heat source because accurate measurements will
+            not be achieved as the temperature increases.</p>
+        <h4>Avoid Magnets</h4>
+        <p> Precision measuring tools should never be put near any magnetic material such as a magnetic worktable to avoid being magnetized.</p>
+        <h4>Avoid Errors That Can Cause Inaccuracy in Measurement</h4>
+        <h4>Alignment Errors</h4>
+        <p>A caliper is prone to error described by “Abbé’s principle,” which says that a source of error is introduced anytime the reference line of a measuring system doesn’t lie along the same line as the dimension being measured. On a caliper, the scales
+            or gears are not in line with the measuring faces or contacts. As a result, the caliper shifts and wiggles (in microscopic increments) in a way comparable to that of a table or chair when the legs become loose. The error can be minimized by
+            measuring as close to the rail as possible
+        </p>
+        <h4>Errors Due to Vibrations</h4>
+        <p> For consistent and repetitive readings, a gauge should be subjected to as little vibration as possible, or none.</p>
+        <h4>Internal Diameter</h4>
+        <p> Measurement Errors Another error limits the instrument’s effectiveness at measuring an internal diameter. The design of the standard caliper places the measuring contacts or jaws offset from one another. That means the jaws will never “find” the
+            maximum diameter of the work piece.</p>
+    </div>
+    <div class="gen-paragraphs">
+        <h3 class="paraHeader">Dial Bore Gage</h3>
+        <img class="toolImage" src="./assets/imgs/dial-bore-gauge.jpg" alt="dial-bore-gauge">
+        <h4>Steps for setting up a Dial Bore Gage:</h4>
+        <ol>
+            <li>Setup a micrometer to the size of bore that you will be measuring. (Make sure to use the correct bore size listed on the print.) This setting is normally the bottom of the tolerance listed on the print.
+            </li>
+            <li>Setup the dial bore gage extensions so that the travel of the needle on the gage face will be in the middle of its travel.
+            </li>
+            <li>Install the gage on the body of the dial bore gage and verify that the travel of the gage needle is in the middle of the gage travel.
+            </li>
+            <li>Place the bore gage between the micrometer's spindle and anvil.</li>
+            <li>Rock the dial bore gage back and forth and side to side to identify where zero is.</li>
+            <li>Adjust the face of the dial on the bore gage to read zero and not the small dial position.</li>
+            <li>Verfy the new setting by repeating step 4 until the dial face indicates zero exactly.</li>
+        </ol>
+    </div>
+
+    <div class="gen-paragraphs">
+        <h3 class="paraHeader">Height Gage</h3>
+        <img class="toolImage" src="./assets/imgs/height-gage.jpg" alt="height-gage">
+    </div>
+    <div class="gen-paragraphs">
+        <p>Height gauges are precision measuring instruments that can be used to determine the height of an object or workpiece with extremely high precision and accuracy, or to provide marked locations on the item relative to a reference plane for subsequent
+            use. A similar device to a height gauge, called a <em>stadiometer</em>, is used in medical facilities such as doctors’ offices to measure the height of a patient, albeit with much lower precision and accuracy. Height gauges are primarily metrology
+            instruments that are employed to establish precise dimensional characteristics and locations of features in a manufacturing or production operation for quality control.</p>
+        <h4>General height gauge components and set-up</h4>
+        <p>Height gauges consist of a sliding carriage with a moving stylus or scribe that is mounted to a vertical axis beam or column that contains a measuring scale. The beam is configured so that it is perpendicular to the base of the height gauge, which
+            is typically made using a rigid material to add stability to the instrument for measurements. The beam or column height can vary from 6 inches or less to upwards of 6 feet, depending on the model. Custom gauges may extend the column height
+            even higher. The carriage movement is controllable and may be adjusted by a set of adjustment screws for coarse or fine adjustments and may be locked into position as needed. A measuring jaw is used whose upper and lower surfaces are parallel
+            to the base of the height gauge. In the case where it is desired to scribe the workpiece, a specialized scribing attachment can be used in place of the measuring jaw.</p>
+        <p>When using a height gauge, a granite surface plate is typically used to measure and scribe part features from a datum plane. A touch probe, scriber, or other measuring probe is employed to locate the desired feature or point on the workpiece being
+            inspected for measurement. Before performing measurements, care must be taken to assure that the gauge is properly seated on the surface and that there is no contamination that might interfere with accurate measurements. Height gauge manufacturers
+            will typically recommend that the bottom of the height gauge be inspected prior to its use. An abrasive, such as a rubber stone or cera stone, should be employed to remove scratches, burrs, or other surface imperfections that may impact the
+            readings. The use of a mild cleaning solvent such as denatured alcohol is also recommended to remove any material that has accumulated from the use of the stones.</p>
+
+        <p>Once the height gauge base and surface plate have been properly cleaned, the instrument should be zeroed out by using a test probe brought to the surface that will be used as the reference plane or reference point. Test the surface while pressing
+            down on the corners of the part. Any variation in the reading on the indicator reflects that the surface level is not correct, and the stoning and cleaning steps need to be repeated to correct the condition. The use of gage blocks is also
+            recommended to validate all dimensional readings taken by a height gauge.</p>
+        <h4>Types of height gauges</h4>
+        <p>Height gauges may be broadly characterized into four basic types:</p>
+        <ul>
+            <li>Vernier height gauges</li>
+            <li>Dial height gauges</li>
+            <li>Digital counter height gauges</li>
+            <li>Electronic height gauges</li>
+        </ul>
+        <h3>Vernier height gauges</h3>
+        <p>Vernier height gauges employ the use of a main scale and a Vernier scale to provide for greater resolution of the measured value. They are generally available in measuring size ranges from 6 inches to 6 feet. Models can have imperial (inch) or
+            metric (mm) scales or both on them.</p>
+        <h4>Dial height gauges</h4>
+        <p>Dial height gauges tend to be available in smaller measuring size ranges, typically less than 12 inches or 300 mm. These units feature a mechanical dial with a needle pointer that allows for easy reading. Because of their size, dial height gauges
+            are very portable and can be stored in a toolbox.</p>
+        <h4>Digital counter height gauges</h4>
+        <p>Digital counter height gauges combine a dial and needle as found on the dial height gauge type with a dual-digit counter to increase the speed and efficiency of the measurement process. The counter will allow readings to tenths of an inch while
+            thousandths of an inch can be read on the dial. The presence of an additional counter also has the advantage in that it enables users to set and maintain an absolute and floating zero if needed.</p>
+        <h4>Electronic height gauges</h4>
+        <p>Sometimes called digital height gauges (not to be confused with digital counter height gauges), electronic height gauges substitute digital displays for the analog dials and mechanical counters found on the other types of gauges. Electronic height
+            gauges generally allow the user to select from different units of measure such as inches versus millimeters. Higher-end models also add a host of additional features and capabilities that improve the measuring capabilities and accuracy. Examples
+            of some of these capabilities include:</p>
+        <ul>
+            <li>An air bearing or air cushion system that allows for light and smooth movement of the gauge</li>
+            <li>A motorized measuring carriage that simplifies the measurement process and eliminates the need for the operator to move the carriage</li>
+            <li>Built-in temperature compensation capabilities to allow for the variation in coefficients of thermal expansion across material types being measured</li>
+            <li>Data storage and output capabilities, allowing for use with SPC software applications by outputting data through RS323 or USB bus</li>
+        </ul>
+        <h4>Uses of height gauges</h4>
+        <p>Height gauges are used in quality control applications and can perform several types of measurements:</p>
+        <ul>
+            <li>To measure the distance from a reference surface to a specific feature of a part to verify that it meets specifications and tolerances</li>
+            <li>To scribe a part with accurate vertical dimensions or features from a datum plane so that additional machining can be done</li>
+            <li>To perform 2D measurements of part features</li>
+            <li>To verify center-to-center dimensions</li>
+            <li>To measure flatness</li>
+            <li>To measure angles</li>
+            <li>To measure straightness/squareness or perpendicularity of parts</li>
+        </ul>
+    </div>
+    <app-scroll-topbtn></app-scroll-topbtn>
+</div>

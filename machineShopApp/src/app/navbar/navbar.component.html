@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary my-navbar static-top">
+    <div class="container-fluid">
+        <!--<a class="navbar-brand" href="#">Navbar</a> -->
+        <img width="200" alt="Hycomplogo" src="assets/imgs/hycompwidelogo.png" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/userprofile" routerLinkActive="active">Home
+              <!--<span class="visually-hidden">(current)</span>-->
+            </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/generalmachining" routerLinkActive="active">Machine Shop</a>
+                    </li>
+                    <!--<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" routerLinkActive="active" role="button" aria-haspopup="true" aria-expanded="false">General Machining</a>
+                     <div class="dropdown-menu">
+                        <a class="dropdown-item" routerLink="/generalmachining" routerLinkActive="active">Reference Info</a>
+                        <a class="dropdown-item" routerLink="/generalmachining/measuring-tools" routerLinkActive="active">Measuring</a>
+                        <a class="dropdown-item" routerLink="/generalmachining/gd-and-t" routerLinkActive="active">GD&T</a>
+                        <a class="dropdown-item" routerLink="/generalmachining/deburring" routerLinkActive="active">De Burring</a>
+                        <a class="dropdown-item" routerLink="/generalmachining/partswashing" routerLinkActive="active">Parts Washing</a>
+                        <a class="dropdown-item" routerLink="/generalmachining/saw" routerLinkActive="active">Saw</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/generalmachining/cat50leadwells" routerLinkActive="active">Leadwell Mill 1 & 2</a>
+                        <a class="dropdown-item" routerLink="/generalmachining/cat40leadwell" routerLinkActive="active">Leadwell Mill 3</a>
+                        <a class="dropdown-item" routerLink="/generalmachining/cinci" routerLinkActive="active">Cincinatti Mill</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/generalmachining/doosan" routerLinkActive="active">Doosan</a>
+                        <a class="dropdown-item" routerLink="/generalmachining/leadwell-lathe" routerLinkActive="active">Leadwell Lathe</a>
+                        <a class="dropdown-item" routerLink="/generalmachining/moriseiki" routerLinkActive="active">Mori Seiki</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" routerLink="/generalmachining/cylinderking" routerLinkActive="active">Cylinder King</a>
+                        <a class="dropdown-item" routerLink="/generalmachining/rodhone" routerLinkActive="active">Rod Hone</a>
+                    </div> 
+                </li>-->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" routerLink="/toolreorder" routerLinkActive="active">Tool Re-Ordering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/setupsheets" routerLinkActive="active">Setup Sheets</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/assembly" routerLinkActive="active">Assembly</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/engineering" routerLinkActive="active">Engineering</a>
+                    </li>
+
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" routerLinkActive="active" role="button" aria-haspopup="true" aria-expanded="false">Admin</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" routerLink="/signup" routerLinkActive="active">Add User</a>
+                            <a class="dropdown-item" routerLink="/view-users" routerLinkActive="active">View Users</a>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="onLogout()" routerLinkActive="active">Log Out</a>
+                    </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>

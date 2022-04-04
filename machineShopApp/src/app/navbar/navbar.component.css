@@ -1,0 +1,13 @@
+.my-navbar {
+    width: 100%;
+    padding: .5%;
+    height: 10%;
+}
+
+@media (min-width:400px) {
+    .my-navbar {
+        width: 100%;
+        padding: .5%;
+        height: 10%;
+    }
+}

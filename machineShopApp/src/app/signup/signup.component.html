@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+
+<section class="wrapper">
+    <div class="content">
+        <header>
+            <h1>Create Your Account</h1>
+        </header>
+        <section>
+            <div class="alert alert-danger" *ngIf="error">
+                <p>{{ error }}</p>
+            </div>
+            <div *ngIf='isLoading' style="text-align: center;">
+                <app-loading-spinner></app-loading-spinner>
+            </div>
+            <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" class="login-form" *ngIf='!isLoading'>
+                <div class="input-group-login">
+                    <label for="username">Email</label>
+                    <input type="text" placeholder="Email" id="email" ngModel name="email">
+                </div>
+                <div class="input-group-login">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="password1" ngModel name="password1">
+                </div>
+                <div class="input-group-login">
+                    <label for="password2">Re Enter Password</label>
+                    <input type="password" placeholder="Password" id="password2" ngModel name="password2">
+                </div>
+                <div class="input-group-login"><button type="submit">Add User</button></div>
+            </form>
+        </section>
+    </div>
+</section>

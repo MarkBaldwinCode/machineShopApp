@@ -1,0 +1,17 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+}
+
+.calendar-pdf {
+    margin: 2%;
+    padding: 2%;
+    width: 100%;
+    /* justify-content: center; */
+}
+
+.top-padding {
+    height: 5%;
+}

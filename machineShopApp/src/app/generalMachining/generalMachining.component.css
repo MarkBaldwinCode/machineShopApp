@@ -1,0 +1,62 @@
+.container {
+    top: 10%;
+    left: 15%;
+    width: auto;
+    /* background-color: blueviolet; */
+}
+
+h2,
+h3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    margin: 2%;
+    padding: 2%;
+    color: black;
+}
+
+.gen-paragraphs {
+    margin: 2%;
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: pink; */
+}
+
+.chart {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 500px;
+    /* background-color: blue; */
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 35px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+
+.button {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    background-color: #2780e3;
+    color: white;
+    padding: 25px;
+    width: 200px;
+    border: 15px solid;
+    border-radius: 50px;
+    cursor: pointer;
+}

@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<h2>Tool Re-Order List</h2>
+<!-- Tool Re-Order List -->
+<form>
+    <div>
+        <form [formGroup]="itemRequestForm" (ngSubmit)="onSubmit()">
+            <div>
+                <label for="">Item Needed</label>
+                <input type="text" formControlName="item">
+            </div>
+            <a class="input-group-login"><button type="submit">Search for Item</button></a>
+        </form>
+    </div>
+</form>

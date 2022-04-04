@@ -1,0 +1,26 @@
+.gen-paragraphs {
+    justify-content: center;
+    margin: 2%;
+    padding: 2%;
+    /* background-color: pink; */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+}
+
+.saw-pdf {
+    margin: 2%;
+    padding: 2%;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    padding: 1rem;
+    border: 1px solid black;
+}

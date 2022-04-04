@@ -1,0 +1,30 @@
+<app-login-header></app-login-header>
+
+<section class="wrapper">
+    <div class="content">
+        <header>
+            <h1>Welcome back</h1>
+        </header>
+        <section>
+            <div class="alert alert-danger" *ngIf="error">
+                <p>{{ error }}</p>
+            </div>
+            <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" class="login-form" *ngIf='!isLoading'>
+                <div class="input-group-login">
+                    <label for="username">Email</label>
+                    <input type="text" placeholder="Email" id="email" ngModel name="email">
+                </div>
+                <div class="input-group-login">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" id="password" ngModel name="password">
+                </div>
+                <div class="input-group-login"><button type="submit">Login</button></div>
+            </form>
+        </section>
+
+        <footer>
+            <a routerLink='/forgotauth' title="Forgot Password">Forgot Password</a>
+            <!-- | <a routerLink="/signup" title="Forgot Password">Sign Up</a> -->
+        </footer>
+    </div>
+</section>

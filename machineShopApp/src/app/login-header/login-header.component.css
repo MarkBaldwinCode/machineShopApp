@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex;
+    
+  }
+  
+  .flex-container > div {
+    margin: 1rem;
+    padding: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    
+  }
+
+
