@@ -5,8 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuthGuard } from './auth/auth.guard';
 
 
+
 import { AppComponent } from './app.component';
 import { generalMachiningComponent } from './generalMachining/generalMachining.component';
+import { DailyInfoComponent } from './generalMachining/daily-info/daily-info.component';
 import { setupSheetsComponent } from './setupSheets/setupSheets.component';
 import { toolReOrderComponent } from './toolReOrder/toolReOrder.component';
 import { RouterModule, Routes } from '@angular/router';
@@ -40,7 +42,6 @@ import { GdAndTComponent } from './gd-and-t/gd-and-t.component';
 import { MeasuringToolsComponent } from './measuring-tools/measuring-tools.component';
 import { ScrollTopbtnComponent } from './scroll-topbtn/scroll-topbtn.component';
 import { GeneralMachiningInfoComponent } from './general-machining-info/general-machining-info.component';
-import { DailyInfoComponent } from './daily-info/daily-info.component';
 import { DailyMaintanceComponent } from './daily-maintance/daily-maintance.component';
 import { BackBtnComponent } from './back-btn/back-btn.component';
 import { ExamplePdfViewerComponent } from './example-pdf-viewer/example-pdf-viewer.component';
@@ -57,8 +58,10 @@ const appRoutes: Routes =[
 {path: 'userprofile', component: UserprofileComponent, canActivate: [AuthGuard]}, 
 {path: 'setupsheets', component: setupSheetsComponent, canActivate: [AuthGuard]},
 {path: 'toolreorder', component: toolReOrderComponent, canActivate: [AuthGuard]},
-{path: 'generalmachining', component: generalMachiningComponent, canActivate: [AuthGuard]},
-{path: 'generalmachining/daily-info', component: DailyInfoComponent, canActivate: [AuthGuard]},
+{path: 'generalmachining', component: generalMachiningComponent, canActivate: [AuthGuard], children: [
+  {path: 'daily-info', component: DailyInfoComponent, canActivate: [AuthGuard]},
+]},
+//{path: 'generalmachining/daily-info', component: DailyInfoComponent, canActivate: [AuthGuard]},
 {path: 'generalmachining/daily-maintance', component: DailyMaintanceComponent, canActivate: [AuthGuard]},
 {path: 'generalmachining/general-machining-info', component: GeneralMachiningInfoComponent, canActivate: [AuthGuard]},
 {path: 'generalmachining/saw', component: SawComponent, canActivate: [AuthGuard]},

@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject, HostListener } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-generalMachining',
@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class generalMachiningComponent{
     windowScrolled: boolean;
 
-    constructor(@Inject(DOCUMENT) private document: Document, private router: Router) { }
+    constructor(@Inject(DOCUMENT) private document: Document, private router: Router, private activatedRoute: ActivatedRoute) { }
   
     @HostListener("window:scroll", [])
   
@@ -25,7 +25,8 @@ export class generalMachiningComponent{
     }
   
     gmDailyInfo(){
-      this.router.navigate(['/generalmachining/daily-info']);
+      //this.router.navigate(['/generalmachining/daily-info']);
+      this.router.navigate(['daily-info'], {relativeTo: this.activatedRoute});
     }
 
     gmDailyMaintance(){
