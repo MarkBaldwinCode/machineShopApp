@@ -1,0 +1,58 @@
+h2,
+h3,
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.paraHeader {
+    margin: 1%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gen-paragraphs {
+    justify-content: center;
+    margin: 2%;
+    padding: 2%;
+    /* background-color: pink; */
+}
+
+p,
+li {
+    font-size: large;
+}
+
+.toolImage {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 2px solid black;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 35px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+
+.button {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    background-color: #2780e3;
+    color: white;
+    padding: 15px;
+    width: 200px;
+    border: 1px solid;
+    border-radius: 50px;
+    cursor: pointer;
+}

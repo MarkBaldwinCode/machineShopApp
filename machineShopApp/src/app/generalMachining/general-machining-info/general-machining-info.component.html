@@ -1,0 +1,60 @@
+<!-- <app-header></app-header>
+<app-navbar></app-navbar> -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2>General Machining Information</h2>
+            <div class="gen-paragraphs">
+                <input type="button" class="button" (click)="scrollToMetricConv()" value="Metric Conversion">
+                <input type="button" class="button" (click)="scrollToTDL()" value="TDL">
+            </div>
+            <div class="row">
+                <div class="gen-paragraphs">
+                    <h3>Tap Drill Chart</h3>
+                    <embed class="chart" src="./assets/pdfDocs/Drill Chart.pdf" type="application/pdf" />
+
+                </div>
+            </div>
+            <div class="gen-paragraphs">
+                <h3>Metric Conversion Information</h3>
+                <h5>Linear Units</h5>
+                <ul>
+                    <li>25.4 millimeters (mm) = 1 inch</li>
+                    <li>1 millimeter = .03937 inches</li>
+                    <li>1 meter = 3.281 feet</li>
+                    <li>1 meter = 1.094 yards</li>
+                    <li>1 centimeter (cm) = .03937 feet</li>
+                    <li>1 cm = .3937 inches</li>
+                    <li>1 cm = .01 meter (m)</li>
+                    <li>1 cm = 10 millimeters</li>
+                    <li>1 kilometer (km) = 3281 feet</li>
+                    <li>1 km = .6214 miles</li>
+                    <li>1 km = 1094 yards</li>
+                </ul>
+            </div>
+            <div class="gen-paragraphs">
+                <label for="">Things to do</label>
+                <ul>
+                    <li>Tap Drill Chart</li>
+                    <li>Metric Conversion</li>
+                    <li>GD & T</li>
+                    <li>Micrometers and the Vernier scale</li>
+                    <li>Calipers</li>
+                    <li>Decimal system as it relates to fractional measurement</li>
+                    <li>Measuring flatness</li>
+                    <li>Measuring Parrellel</li>
+                    <li>Measuring bores</li>
+                    <li>Teliscoping gauges</li>
+                    <li>Pin Gauges and there use</li>
+                    <li>Dial and test indicators</li>
+                    <li>Sweeping a bore in</li>
+                    <li>Dialing a vice in</li>
+                    <li>Bore gauge use and setup</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <app-scroll-topbtn></app-scroll-topbtn>
+</div>

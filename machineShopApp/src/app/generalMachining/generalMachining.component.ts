@@ -25,8 +25,8 @@ export class generalMachiningComponent{
     }
   
     gmDailyInfo(){
-      //this.router.navigate(['/generalmachining/daily-info']);
-      this.router.navigate(['daily-info'], {relativeTo: this.activatedRoute});
+      this.router.navigate(['/generalmachining/daily-info']);
+      // this.router.navigate(['daily-info'], {relativeTo: this.activatedRoute});
     }
 
     gmDailyMaintance(){
