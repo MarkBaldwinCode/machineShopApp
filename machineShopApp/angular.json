@@ -126,6 +126,16 @@
               "devServerTarget": "machineShopApp:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "machineShopApp:build:production",
+            "firebaseProject": "hyshop-75058",
+            "firebaseHostingSite": "hyshop-75058"
+          }
         }
       }
     }

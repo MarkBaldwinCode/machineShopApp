@@ -50,3 +50,8 @@ environment.prod.ts
 environment.ts
 
 
+
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json

@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "hyshop-75058"
+  },
+  "targets": {
+    "hyshop-75058": {
+      "hosting": {
+        "machineShopApp": [
+          "hyshop-75058"
+        ]
+      }
+    }
   }
 }
