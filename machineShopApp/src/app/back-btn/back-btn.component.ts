@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-back-btn',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./back-btn.component.css']
 })
 export class BackBtnComponent implements OnInit {
+  @Input() buttonLink = ""
 
   constructor() { }
 

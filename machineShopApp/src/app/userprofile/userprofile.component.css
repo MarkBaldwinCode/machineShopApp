@@ -1,11 +1,16 @@
 .userprofile_blank_header{
+    display: flex;
     background-color: #0d6efd;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100px;
 }
 
 .h1{
     font-family: 'Kanit', sans-serif;
+    font-size: larger;
+    letter-spacing: 5px;
 }
 
 .userprofile{

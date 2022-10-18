@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+.button {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    background-color: #2780e3;
+    color: white;
+    padding: 15px;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.back_button{
+    padding: 1rem;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 35px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}

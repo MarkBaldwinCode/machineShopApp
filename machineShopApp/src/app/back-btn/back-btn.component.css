@@ -1,0 +1,16 @@
+.button {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    background-color: #2780e3;
+    color: white;
+    padding: 15px;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.back_button{
+    padding: 1rem;
+}
