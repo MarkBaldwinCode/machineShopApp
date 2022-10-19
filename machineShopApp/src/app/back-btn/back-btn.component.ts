@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-back-btn',
@@ -7,9 +7,13 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./back-btn.component.css']
 })
 export class BackBtnComponent implements OnInit {
-  @Input() buttonLink = ""
+  @Output() backURL = new EventEmitter<string>();
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  callBackURL(){
+    this.backURL.emit();
+  }
 
   ngOnInit(): void {
   }
