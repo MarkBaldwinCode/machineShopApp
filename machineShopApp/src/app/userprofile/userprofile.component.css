@@ -11,6 +11,7 @@
     font-family: 'Kanit', sans-serif;
     font-size: larger;
     letter-spacing: 5px;
+    color:white;
 }
 
 .userprofile{
@@ -81,3 +82,5 @@
     background-position: center;
     background-size: 350px;
 }
+
+
