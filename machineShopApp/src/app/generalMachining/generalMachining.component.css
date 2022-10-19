@@ -35,28 +35,9 @@ h3 {
     /* background-color: blue; */
 }
 
-.scroll-to-top {
-    position: fixed;
-    bottom: 15px;
-    right: 35px;
-    opacity: 0;
-    transition: all .2s ease-in-out;
-}
-
-.show-scrollTop {
-    opacity: 1;
-    transition: all .2s ease-in-out;
-}
 
 .button {
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    background-color: #2780e3;
-    color: white;
     padding: 25px;
     width: 200px;
     border: 15px solid;
-    border-radius: 50px;
-    cursor: pointer;
 }

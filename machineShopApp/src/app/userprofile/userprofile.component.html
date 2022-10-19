@@ -1,38 +1,18 @@
-<app-navbar></app-navbar>
-<div class="top-padding"></div>
-
-<div class="container">
-    <div class="gen-paragraphs">
-        <div class="flex-container">
-            <div class="col-sm-6">
-                <div class="card text-white bg-primary mb-3 " style="max-width: 30rem;">
-                    <div class="card-header text-center">6S Teams</div>
-                    <div class="card-body ">
-                        <ol class="card-text">
-                            <li>Matthew & Cannon</li>
-                            <li>Victor & Marcelo</li>
-                            <li>Jackson & Kason</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="card text-white bg-primary mb-3 " style="max-width: 30rem;">
-                    <div class="card-header text-center">Audit Week Schedule</div>
-                    <div class="card-body ">
-                        <ol class="card-text">
-                            <li>Team 1 Audit Week: August 23 - 26</li>
-                            <li>Team 2 Audit Week: August 30 – September 2</li>
-                            <li>Team 3 Audit Week: September 6 - 9</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex-container">
-            <div class="calendar-pdf">
-                <embed src="./assets/pdfDocs/cleaningCalendarAugust.pdf" type="application/pdf" width="100%" height="500px" />
-            </div>
-        </div>
-    </div>
+<div class="userprofile_blank_header">
+    <h1>WELCOME</h1>
 </div>
+<!-- <app-navbar></app-navbar> -->
+<div class="userprofile">
+  <div class="userprofile_buttons">
+    <div class="imgContainer item1" on-click="generalMachining()">
+        <label class="imgBtnLabel" for="Compressor Fundamentals">Machine Shop</label>
+    </div>
+    <div class="imgContainer item2" on-click="assembly()">
+        <label class="imgBtnLabel" for="Compressor Fundamentals">Assembly</label>
+    </div>
+    <div class="imgContainer item3" on-click="engineering()">
+        <label class="imgBtnLabel" for="Compressor Fundamentals">Engineering</label>
+    </div>
+  </div>
+</div>
+<!-- Footer -->

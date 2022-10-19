@@ -1,17 +1,83 @@
-.flex-container {
+.userprofile_blank_header{
     display: flex;
-    flex-direction: row;
+    background-color: #0d6efd;
     justify-content: center;
-    margin: 5%;
-}
-
-.calendar-pdf {
-    margin: 2%;
-    padding: 2%;
+    align-items: center;
     width: 100%;
-    /* justify-content: center; */
+    height: 100px;
 }
 
-.top-padding {
-    height: 5%;
+.h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: larger;
+    letter-spacing: 5px;
+}
+
+.userprofile{
+    background-color: white;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.userprofile_buttons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.userprofile_button{
+    background-color: brown;
+    width: 200px;
+    min-height: 200px;
+    text-align: center;
+    vertical-align: center;
+    border: 3px solid black;
+}
+
+.imgContainer {
+    position: relative;
+    margin: 1%;
+    padding: 2%;
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid black;
+    border-radius: 10%;
+    cursor: pointer;    
+}
+
+.imgBtn {
+    width: 95%;
+    padding: 2%;
+}
+
+.imgBtnLabel {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); 
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.item1{
+    background: url("../../assets/imgs/cylinderHead4th.jpg");
+    background-position: center;
+    background-size: 350px;
+}
+
+.item2{
+    background: url("../../assets/imgs/2AN10C 151150.png");
+    background-position: center;
+    background-size: 300px;
+}
+
+.item3{
+    background: url("../../assets/imgs/Engineering.jpg");
+    background-position: center;
+    background-size: 350px;
 }
