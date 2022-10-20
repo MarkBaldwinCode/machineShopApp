@@ -6,8 +6,6 @@ body {
 }
 
 .wrapper {
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,10 +97,3 @@ a {
     font-size: 11px;
 }
 
-@media screen and (max-width: 720px) {
-    .wrapper.content {
-        padding-right: 0;
-        padding-left: 0;
-        margin: 0 10px;
-    }
-}

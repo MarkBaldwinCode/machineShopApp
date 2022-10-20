@@ -28,3 +28,12 @@
     opacity: 1;
     transition: all .2s ease-in-out;
 }
+
+@media screen and (max-width: 1200px) {
+    
+}
+
+
+@media screen and (max-width: 920px) {
+    
+} 

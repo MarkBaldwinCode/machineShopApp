@@ -12,4 +12,22 @@
     
   }
 
+  .landingImgContainer{
+    flex-grow: 1;
+  }
 
+  .landingHeaderTitle{
+    flex-grow: 2;
+  }
+
+@media screen and (max-width: 780px) {
+    .wrapper.content {
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0 10px;
+      }
+
+    .landingImgContainer, .landingHeaderTitle{
+      text-align: center;
+    }
+} 

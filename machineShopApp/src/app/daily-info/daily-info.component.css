@@ -5,19 +5,14 @@
     /* background-color: blueviolet; */
 }
 
-h2,
-h3 {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 3rem;
+.header{
+    margin-bottom: 8%;
 }
 
-.gen-paragraphs {
-    margin: 2%;
-    padding: 2%;
-    align-items: center;
-    justify-content: center;
-    /* background-color: pink; */
+h2, h3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
 }
 
 .section {
@@ -32,3 +27,47 @@ h3 {
     padding-top: 5rem;
 }
 
+
+
+@media screen and (max-width: 920px){
+    .container{
+        width: 100%;
+    }
+    .imgLrg{
+        max-width: 700px;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .section{
+        flex-direction: column;
+    }
+
+    .imgLrg{
+        max-width: 90%;
+        height: auto;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .header{
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15%;
+        padding: 0;
+    }
+
+    .h3 {
+        justify-content: left;
+    }
+}
