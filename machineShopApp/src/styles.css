@@ -29,9 +29,11 @@
     transition: all .2s ease-in-out;
 }
 
-@media only screen and (max-width: 600px){
-    .container{
-        display: flexbox;
-        justify-content: center;
-    }
+@media screen and (max-width: 1200px) {
+    
 }
+
+
+@media screen and (max-width: 920px) {
+    
+} 
